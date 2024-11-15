@@ -43,7 +43,8 @@ export function Header() {
   };
 
   const handleFilterChange = (key, value) => {
-    locationSearch.set('page', activePage);
+    setActivePage(1);
+    locationSearch.set('page', 1);
 
     const updatedFilters = { ...filters, [key]: value };
     setFilters(updatedFilters);
